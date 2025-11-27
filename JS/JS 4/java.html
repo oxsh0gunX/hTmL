@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>javascript event handling</title>
+</head>
+<body>
+<h1>Click the button</h1>
+<button onclick="changeColor()">Change color</button>
+<script>
+   function changeColor() {
+     // Define a list of colors
+     const colors = ["yellow" , "red" , "blue" , "pink" , "orange" , "purple"];
+     // Pink a random color
+     const randomColor = colors[Math.floor(Math.random() * colors.length)];
+     // Change the background color
+     document.body.style.backgroundColor = randomColor;
+     }
+</script>
+</body>
+</html>

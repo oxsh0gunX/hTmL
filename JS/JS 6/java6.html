@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>online quiz</title>
+</head>
+<body>
+<script>
+    function check() {
+      let result = 0;
+      if (document.getElementById("c").checked) result++;
+      if (document.getElementById("a").checked) result++;
+      if (document.getElementById("b").checked) result++;
+      document.getElementById("result").innerHTML = "Your score is: " + result + " / 3";
+    }
+</script>
+<h1>Online Quiz</h1>
+<h2>what is html </h2>
+<input type="radio" name="1">HYPER TEXT MARKUP</input><br><br>
+<input type="radio" name="1">HYPER TEXT LANGUAGE</input><br><br>
+<input type="radio" name="1" id="c">HYPER TEXT MARKUP LANGUAGE</input><br><br>
+<input type="radio" name="1">HYPER TEXT  LANGUAGE</input><br><br>
+<h2>what is css </h2>
+<input type="radio" name="2" id="a">CASCADING STYLE SHEET</input><br><br>
+<input type="radio" name="2">STYLE SHEET</input><br><br>
+<input type="radio" name="2" >CASCADING SHEET</input><br><br>
+<input type="radio" name="2">CASCADING SHEET STYLE</input><br><br>
+<h2>what is JS </h2>
+<input type="radio" name="3">JAVA S</input><br><br>
+<input type="radio" name="3" id="b">JAVA SCRIPT</input><br><br>
+<input type="radio" name="3" >JAVA SHEET</input><br><br>
+<input type="radio" name="3">JAVA SCRIPT LANGUAGE</input><br><br>
+<input type="button" value="Submit" onclick="check()">
+<h2 id="result">score</h2>
+</body>
+</html> 

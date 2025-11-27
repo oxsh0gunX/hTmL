@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+}
+
+body {
+    font-family: 'Poppins';
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzfAXMtDG-mLFS4cW0BVmG2a_txgr6K5HOGQ&s');
+    background-color: #1a1a2e;
+    background-size: cover;
+    background-attachment: fixed;
+    
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(46, 46, 78, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #ff6b35;
+    font-size: 2.5em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-shadow: 0 0 20px rgba(255, 107, 53, 0.3);
+    letter-spacing: 2px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
+td:first-child {
+    font-weight: 500;
+    color: #e0e0e0;
+    width: 30%;
+    font-size: 0.95em;
+    text-align: right;
+    padding-right: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #ff6b35;
+    background: rgba(255, 255, 255, 0.12);
+    box-shadow: 0 0 15px rgba(255, 107, 53, 0.2);
+    transform: translateY(-2px);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #ff6b35;
+    transform: scale(1.2);
+}
+
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-right: 20px;
+    font-size: 0.9em;
+    cursor: pointer;
+    color: #e0e0e0;
+}
+
+select {
+    cursor: pointer;
+    background-image: url("");
+    background-position: right 10px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    padding-right: 40px;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6b35, #f7931e);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 15px;
+    box-shadow: 0 5px 15px rgba(255, 107, 53, 0.3);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255, 107, 53, 0.4);
+    background: linear-gradient(45deg, #ff8e53, #ff6b35);
+}
+
+button:active {
+    transform: translateY(-1px);
+}
+
+button[type="reset"] {
+    background: linear-gradient(45deg, #6c757d, #495057);
+    box-shadow: 0 5px 15px rgba(108, 117, 125, 0.3);
+}
+
+button[type="reset"]:hover {
+    background: linear-gradient(45deg, #868e96, #6c757d);
+    box-shadow: 0 8px 25px rgba(108, 117, 125, 0.4);
+}
+
+tr:nth-child(even) td {
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 10px;
+}
+
+tr:hover td {
+    background: rgba(255, 107, 53, 0.05);
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        margin: 10px;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    td {
+        display: block;
+        width: 100%;
+        padding: 10px 0;
+    }
+    
+    td:first-child {
+        text-align: left;
+        margin-bottom: 5px;
+        font-weight: 600;
+    }
+    
+    button {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+form {
+    display: block;
+}

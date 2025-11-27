@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Perform String and Math Functions in JavaScript</title>
+<style>
+body{
+background-color:BLACK;
+text-align:center;
+}
+h2{
+color:green;
+}
+h3{
+color:purple;
+}
+</style>
+</head>
+<body>
+
+<h2>Predefined Functions in JavaScript</h2>
+
+<h3>String Functions</h3>
+<label>Enter a string:</label><br>
+<input type="text" id="strInput" placeholder="Type something...">
+<button onclick="stringFunctions()">Perform String Functions</button>
+
+<p id="stringOutput"></p>
+
+<h3>Math Functions</h3>
+<label>Enter a number:</label><br>
+<input type="number" id="numInput" placeholder="Enter number">
+<button onclick="mathFunctions()">Perform Math Functions</button>
+
+<p id="mathOutput"></p>
+
+<script>
+
+function stringFunctions() {
+    let str = document.getElementById("strInput").value;
+    let result = "";
+
+    if (str === "") {
+        document.getElementById("stringOutput").innerHTML = "Please enter a string!";
+        return;
+    }
+
+    result += "Original String: " + str + "<br>";
+    result += "Length: " + str.length + "<br>";
+    result += "Uppercase: " + str.toUpperCase() + "<br>";
+    result += "Lowercase: " + str.toLowerCase() + "<br>";
+    result += "First Character: " + str.charAt(0) + "<br>";
+    
+
+    document.getElementById("stringOutput").innerHTML = result;
+}
+
+
+function mathFunctions() {
+    let num = parseFloat(document.getElementById("numInput").value);
+    let result = "";
+
+    if (isNaN(num)) {
+        document.getElementById("mathOutput").innerHTML = "Please enter a valid number!";
+        return;
+    }
+
+    result += "Number: " + num + "<br>";
+    result += "Absolute Value: " + Math.abs(num) + "<br>";
+    result += "Rounded: " + Math.round(num) + "<br>";
+    result += "Ceiling: " + Math.ceil(num) + "<br>";
+    result += "Floor: " + Math.floor(num) + "<br>";
+    result += "Square Root: " + Math.sqrt(num) + "<br>";
+    result += "Power (num²): " + Math.pow(num, 2) + "<br>";
+    result += "Random (0–1): " + Math.random().toFixed(3) + "<br>";
+    result += "Truncation: " + Math.trunc(num) + "<br>";
+    result += "Sign: " + Math.sign(num) + "<br>";
+    result += "PI Constant: " + Math.PI.toFixed(5) + "<br>";
+
+    document.getElementById("mathOutput").innerHTML = result;
+}
+</script>
+
+</body>
+</html>
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<title>REGISTRATION FORM</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="reg.css">
+</head>
+<body>
+<div class="container">
+<form>
+<center>
+<h2>REGISTRATION FORM</h2>
+  </center>
+<table border="0" cellpadding="5">
+ <tr>
+ <td>Full Name</td>
+                    <td><input type="text" placeholder="Enter your full name" required></td>
+                </tr>
+                <tr>
+                    <td>Mobile Number</td>
+                    <td><input type="text" placeholder="Enter mobile number" required></td>
+                </tr>
+                <tr>
+                    <td>Email id</td>
+                    <td><input type="email" placeholder="Enter email address" required></td>
+                </tr>
+                <tr>
+                    <td>Age</td>
+                    <td><input type="number" placeholder="Enter your age" min="1" max="120" required></td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td class="radio-group">
+                        <label><input type="radio" name="gender" value="male" required> Male</label>
+                        <label><input type="radio" name="gender" value="female"> Female</label>
+                        <label><input type="radio" name="gender" value="others"> Others</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Date Of Birth</td>
+                    <td><input type="date" required></td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td><textarea rows="4" cols="25" placeholder="Enter your address" required></textarea></td>
+                </tr>
+                <tr>
+                    <td>Current Study</td>
+                    <td>
+                        <select required>
+                            <option value="">Select Course</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>B.Tech</option>
+                            <option>M.Tech</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Department</td>
+                    <td>
+                        <select required>
+                            <option value="">Select Department</option>
+                            <option>CS</option>
+                            <option>IT</option>
+                            <option>EC</option>
+                            <option>ME</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Upload CV</td>
+                    <td>
+                        <input type="file" accept=".pdf,.doc,.docx">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Programming Languages</td>
+                    <td class="checkbox-group">
+                        <label><input type="checkbox" name="prog[]" value="html"> HTML</label>
+                        <label><input type="checkbox" name="prog[]" value="react"> Reactjs</label>
+                        <label><input type="checkbox" name="prog[]" value="css"> CSS</label>
+                        <label><input type="checkbox" name="prog[]" value="flutter"> Flutter</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Languages</td>
+                    <td class="checkbox-group">
+                        <label><input type="checkbox" name="lang[]" value="english"> English</label>
+                        <label><input type="checkbox" name="lang[]" value="malayalam"> Malayalam</label>
+                        <label><input type="checkbox" name="lang[]" value="arabic"> Arabic</label>
+                        <label><input type="checkbox" name="lang[]" value="hindi"> Hindi</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
